@@ -1,0 +1,80 @@
+AllCops:
+  Exclude:
+    - Gemfile
+    - bin/**/*
+    - vendor/**/*
+
+Encoding:
+  Enabled: true
+
+Documentation:
+  Enabled: true
+  Exclude:
+    - test/**/*
+
+LineLength:
+  Max: 82
+
+# Class
+ClassLength:
+  Max: 80
+
+EmptyLinesAroundAccessModifier:
+  Enabled: false
+
+AccessModifierIndentation:
+  EnforcedStyle: indent
+
+# Error
+RaiseArgs:
+  EnforcedStyle: exploded
+
+SignalException:
+  EnforcedStyle: semantic
+
+# Method
+MethodLength:
+  Max: 10
+
+SingleLineMethods:
+  AllowIfMethodIsEmpty: false
+
+CollectionMethods:
+  PreferredMethods:
+    collect: 'map'
+    collect!: 'map!'
+    reduce: 'inject'
+    detect: 'find'
+    find_all: 'select'
+
+FormatString:
+  Enabled: false
+
+# Parameter
+ParameterLists:
+  Max: 3
+  CountKeywordArgs: true
+
+BracesAroundHashParameters:
+  Enabled: false
+  EnforcedStyle: braces
+
+# Block
+BlockNesting:
+  Max: 3
+
+# Brackets
+SpaceInsideBrackets:
+  Enabled: true
+
+# Hash
+IndentHash:
+  EnforcedStyle: consistent
+
+SpaceInsideHashLiteralBraces:
+  EnforcedStyle: space
+  EnforcedStyleForEmptyBraces: space
+
+# String
+StringLiterals:
+  EnforcedStyle: single_quotes
