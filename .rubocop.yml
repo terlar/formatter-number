@@ -1,80 +1,41 @@
 AllCops:
   Exclude:
-    - Gemfile
-    - bin/**/*
-    - vendor/**/*
+    - 'bin/**/*'
+    - 'vendor/**/*'
+  DisplayCopNames: true
 
-Encoding:
-  Enabled: true
+Style/FileName:
+  Enabled: false
 
-Documentation:
+Style/Documentation:
   Enabled: true
   Exclude:
-    - test/**/*
+    - 'lib/formatter/number/version.rb'
+    - 'test/**/*'
 
-LineLength:
+Metrics/LineLength:
   Max: 82
 
-# Class
-ClassLength:
-  Max: 80
-
-EmptyLinesAroundAccessModifier:
-  Enabled: false
-
-AccessModifierIndentation:
-  EnforcedStyle: indent
-
-# Error
-RaiseArgs:
-  EnforcedStyle: exploded
-
-SignalException:
-  EnforcedStyle: semantic
-
 # Method
-MethodLength:
-  Max: 10
-
-SingleLineMethods:
+Style/SingleLineMethods:
   AllowIfMethodIsEmpty: false
 
-CollectionMethods:
-  PreferredMethods:
-    collect: 'map'
-    collect!: 'map!'
-    reduce: 'inject'
-    detect: 'find'
-    find_all: 'select'
-
-FormatString:
-  Enabled: false
-
-# Parameter
-ParameterLists:
-  Max: 3
-  CountKeywordArgs: true
-
-BracesAroundHashParameters:
-  Enabled: false
-  EnforcedStyle: braces
-
-# Block
-BlockNesting:
-  Max: 3
+Style/FormatString:
+  EnforcedStyle: percent
 
 # Brackets
-SpaceInsideBrackets:
-  Enabled: true
+Style/SpaceInsideBrackets:
+  Enabled: false
 
 # Hash
-IndentHash:
+Style/IndentHash:
   EnforcedStyle: consistent
 
-SpaceInsideHashLiteralBraces:
+Style/SpaceInsideHashLiteralBraces:
   EnforcedStyle: space
   EnforcedStyleForEmptyBraces: space
 
-# String
-StringLiterals:
-  EnforcedStyle: single_quotes
+# Parameter
+Metrics/ParameterLists:
+  Max: 3
+  CountKeywordArgs: true

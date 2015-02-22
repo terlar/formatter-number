@@ -32,6 +32,7 @@ module Formatter
     end
 
     private
+
     def format_float(number)
       if fixed?
         number = "%0.0#{decimals}f" % number
