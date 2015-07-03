@@ -14,7 +14,7 @@ module Formatter
     # Initialize a formatter with the desired options.
     #
     # @param [Hash] options the options to create a formatter with
-    # @option options [Integer] :decimals (2) Number of decimal points
+    # @option options [Integer] :decimals (2) Number of decimal places
     # @option options [Boolean] :fixed (false) Fixed decimal places
     # @option options [String] :separator ('.') Decimal mark
     # @option options [Integer] :grouping (3) Number of digits per group
