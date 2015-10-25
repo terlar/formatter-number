@@ -35,7 +35,7 @@ module Formatter
 
     def format_float(number)
       if fixed?
-        number = "%0.0#{decimals}f" % number
+        number = "%.#{decimals}f" % number
       else
         number = number.round(decimals)
       end

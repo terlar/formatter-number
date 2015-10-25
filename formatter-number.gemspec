@@ -14,7 +14,7 @@ Gem::Specification.new do |gem|
 
   gem.require_paths = %w(lib)
   gem.files         = `git ls-files`.split($RS)
-  gem.test_files    = gem.files.grep(/^test\//)
+  gem.test_files    = gem.files.grep(%r{^test/})
   gem.extra_rdoc_files = %w(LICENSE README.md)
 
   gem.required_ruby_version = '>= 1.9.3'
