@@ -8,9 +8,8 @@ require 'rubocop/rake_task'
 
 RuboCop::RakeTask.new
 
-task default: :test
+task default: %w(rubocop test)
 task test: 'test:all'
-task ci: %w(rubocop test:all)
 
 namespace :test do
   desc 'Run all tests'
